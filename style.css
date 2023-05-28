@@ -1,0 +1,159 @@
+@import url('https://fonts.cdnfonts.com/css/harry-potter');
+
+:root {
+  --btn-background: white;
+  --btn-text: black;
+  --btn-border: #1114;
+  --btn-hover-background: black;
+  --btn-hover-text: green;
+  --btn-hover-border: #6664;
+  --btn-active-background: #222;
+  
+  --btn-disabled-background: #bbb;
+  --btn-disabled-text: #444;
+  --btn-font-size: 2em;
+}
+
+body
+{
+  font-family: 'Harry Potter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #ffffff;
+  margin: 80px 10px;
+  background-color: #000000;
+}
+
+
+
+.videos-container
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+
+.video-item video{
+  width: 40vw;
+  height: 30vw;
+  margin: 2rem;
+  background: #033d22;
+}
+
+#buttons-container
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#buttons-container .buttons-set {
+  display: flex;
+  flex-direction: column;
+}
+#buttons-container  .buttons-pair {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  gap: 20px;
+}
+
+#connection-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  justify-content: space-around;
+}
+
+#connection-container input {
+  padding: 20px;
+  width: 200px;
+}
+
+
+/* .button
+{
+  font-family: 'Harry Potter', sans-serif;
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+.button:hover
+{
+  background-color: #000000;
+  color: #ff0000;
+} */
+
+
+.button {
+  appearance: none;
+  background-color: var(--btn-background);
+  border: 3px solid var(--btn-border);
+  color: var(--btn-text);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Harry Potter', sans-serif;
+  font-size: var(--btn-font-size);
+  font-weight: 600;
+  padding: 5px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.button:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button:hover {
+  background-color: var(--btn-hover-background);
+  color: var(--btn-hover-text);
+  border-color: var(--btn-hover-border);
+}
+
+.button:focus:enabled {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button:active:enabled {
+  background-color: var(--btn-active-background);
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+.button:disabled {
+  background-color: var(--btn-disabled-background);
+  color:  var(--btn-disabled-text);
+  border-color: var(--btn-border);
+  cursor: default;
+}
+
+#hangupButton
+{
+  --btn-background: red;
+  --btn-text: white;
+  --btn-border: #1114;
+  --btn-hover-background: black;
+  --btn-hover-text: red;
+  --btn-hover-border: #6664;
+  --btn-active-background: #222;
+  
+  --btn-disabled-background: #bbb;
+  --btn-disabled-text: #444;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="internet.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS553 Project</title>
+  </head>
+  <body>
+    <h1>I solemnly swear that I am up to no good!</h1>
+    <button id="webcamButton" class = "button">Start the magical devices that see and hear you!</button>
+    <div class="videos-container">
+      <div class="video-item">
+        <h2>You</h2>
+        <video id="webcamVideo" autoplay playsinline muted></video>
+      </div>
+      <div class="video-item">
+        <h2>Not You</h2>
+        <video id="remoteVideo" autoplay playsinline></video>
+      </div>
+    </div>
+    <div id="buttons-container">
+      <div class="buttons-set">
+        <div class="buttons-pair">
+          <button id="videoButtonOn" class = "button" disabled>Video On</button>
+          <button id="videoButtonOff" class = "button" disabled>Video Off</button>
+        </div>
+        <div class="buttons-pair">
+          <button id="audioButtonOn" class = "button" disabled>Unmute</button>
+          <button id="audioButtonOff" class = "button" disabled>Mute</button>
+        </div>
+      </div>
+      <div class="buttons-set">
+        <button id="hangupButton" class = "button" disabled>Michief Managed!</button>
+      </div>
+    </div>
+
+    <!-- <hr style= 'margin: 50px 0px'> -->
+    <img src = 'hp-line.png' style = 'filter: invert(100%); margin: 50px 0px'>
+    <!-- <br> -->
+    <!-- <h2>Feeling lonely? Send this code to your friend (by owl, of course!)</h2> -->
+    <div id="connection-container">
+      <div class="connection-item">
+        <span style = 'font-size: 30px'>Feeling lonely?</span>
+        <br>
+        <span style = 'font-size: 30px'>Send an owl to your friend with this secret code:</span>
+        <br><br>
+        <button id="callButton" class = "button" disabled>Accio Secret Code!</button>
+
+        <input id = "callCode" disabled/>
+      </div>
+      <div class="connection-item">
+        <span style = 'font-size: 30px'>Or wait, do you have the secret from the chambers?</span>
+        <br>
+          <span style = 'font-size: 30px'>Enter the secret code your owl just delivered: </span>
+      <br>
+      <br>
+        <input id="callInput" disabled/>
+        <button id="answerButton" class = "button" disabled>Connect</button>
+      </div> 
+    </div>
+    
+    <!-- <h2>Michief Managed:</h2> -->
+
+    <!-- <br><br><font color=red>Michief Managed: </font><button id="hangupButton" disabled background-color="red">Hangup</button> -->
+    
+    <script type="module" src="/main.js"></script>
+
+  </body>
+</html>
